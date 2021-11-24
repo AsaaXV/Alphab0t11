@@ -1,6 +1,6 @@
 {
     "self_mode": true,
-	"autobio": true,
+	"autobio": false,
 	"antihidetag": false,
 	"user_register": false,
 	"anti_delete" : false,
@@ -9,10 +9,10 @@
 	"language":"ind",
 	"ownerNumber": "6285240389682",
 	"ownerNumberr": "6285240389682",
-	"cr": "@FATUR GANTENG",
+	"cr": "@FATUR",
 	"ownername": "FATUR GANTENG",
-	"botname":"FATUR GANTENG",
+	"botname":"BOT BANG",
 	"thumb":"fatur.jpg",
 	"fakethumb":"thumbnail_1.jpg", 
-	"fake": " 「  FATUR GANTENG  」\nCreated By @FATUR GANTENG"
+	"fake": " 「  BOT BANG  」\nCreated By @FATUR GANTENG"
 }
