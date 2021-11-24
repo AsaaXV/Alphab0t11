@@ -2255,9 +2255,9 @@ const btn = {
     locationMessage: bacotlu.message.locationMessage
 }
 if(menusimple == false){
-let content1 = fs.readFileSync(`image/${thumbnail}`)
-const media1 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content1})
-let bacotlu1 = media1.message["ephemeralMessage"] ? media1.message.ephemeralMessage : media1
+let content = fs.readFileSync(`image/${thumbnail}`)
+const media = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content1})
+let bacotlu = media1.message["ephemeralMessage"] ? media1.message.ephemeralMessage : media1
 
 const buttons = [
   {buttonId: 'ownerku', buttonText: {displayText: '•❗「 OWNER 」'}, type: 1},
