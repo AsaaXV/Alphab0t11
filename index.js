@@ -2226,13 +2226,13 @@ ini_anu =`𝙃𝙚𝙡𝙡𝙤 𝙄'𝙢 𝙪𝙨𝙚𝙧𝙗𝙤𝙩 👋
 *│• Private Chat : ${totalchat.length - giid.length}*
 *│• Total hit : ${hitall}*
 *│• Runtime : ${kyun(anunya)}*
-*╰──────────────❏*
+*╰────────❏*
 
 *╭─❏ _•❗「 INFO 」_*
 *│➤️ Name : ${pushname}*
 *│➤️ Nomor : @${sender.split('@')[0]}*
 *│➤ Owner : ${isOwner ? 'True' : `False`}*
-*╰──────────────❏*
+*╰────────❏*
 `
 const buttons = [
   {buttonId: 'ownerku', buttonText: {displayText: '•❗「 OWNER 」'}, type: 1},
