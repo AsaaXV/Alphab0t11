@@ -2221,15 +2221,10 @@ ini_anu =`𝙃𝙚𝙡𝙡𝙤 𝙄'𝙢 𝙪𝙨𝙚𝙧𝙗𝙤𝙩 👋
 *╭─❏ _•❗「 BOT BAMG 」_*
 *│• Creator :  @${koko.split('@')[0]}*
 *│• Powered  : @${ini_mark.split('@')[0]}*
-*│• Mode : ${status}*
-*│• Status : ${offline ? 'OFFLINE' : 'ONLINE'}*
 *│• Prefix : [  ${prefix}  ]*
 *│• Group Chat : ${giid.length}*
 *│• Private Chat : ${totalchat.length - giid.length}*
-*│• Total Chat : ${totalchat.length}*
 *│• Total hit : ${hitall}*
-*│• Hit today : ${hit_today.length}*
-*│• Speed : ${latensii.toFixed(4)} Second*
 *│• Runtime : ${kyun(anunya)}*
 *╰──────────────❏*
 
@@ -2239,7 +2234,7 @@ ini_anu =`𝙃𝙚𝙡𝙡𝙤 𝙄'𝙢 𝙪𝙨𝙚𝙧𝙗𝙤𝙩 👋
 *│➤️ Nomor : @${sender.split('@')[0]}*
 *│➤️ Me : ${mek.key.fromMe ? 'True' : 'False'}*
 *│➤ Owner : ${isOwner ? 'True' : `False`}*
-*╰──────────────❏
+*╰──────────────❏*
 `
 const buttons = [
   {buttonId: 'ownerku', buttonText: {displayText: '•❗「 OWNER 」'}, type: 1},
