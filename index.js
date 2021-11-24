@@ -177,25 +177,25 @@ let nopref = false
 let single = false
 let prefa = setting.prefix
 let menusimple = false
-let Mloc = false
+let Mloc = true
 let autobio = setting.autobio
 let antihidetag = setting.antihidetag
 
 banChats = setting.self_mode
 autorespon = false
 offline = false
-readGc = true 
+readGc = false 
 readPc = false 
 antitrol = false 
 bugc = false
-autovn = true
+autovn = false
 autoketik = false
 autoregister = setting.user_register
 
 img = setting.img
-baper = 'SUB YT ZEEONE OFC'
-apiku = 'https://youtu.be/2rWbjrDIAyA'
-gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc wa gk usah di ganti 👍
+baper = 'INI BOT EKA'
+apiku = 'Wa.me/6285240389682?text=bamh+ayo+jadi+pacar+saya,+ehh+maksudnya+ajarin+bikin+bot'
+gc_wa_lu = 'https://chat.whatsapp.com/m' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
 owner = targetpc
 fake = setting.fake

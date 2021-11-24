@@ -1,7 +1,7 @@
 {
     "self_mode": true,
-	"autobio": false,
-	"antihidetag": true,
+	"autobio": true,
+	"antihidetag": false,
 	"user_register": false,
 	"anti_delete" : false,
 	"anticall": false,
