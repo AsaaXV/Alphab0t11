@@ -1,18 +1,18 @@
 {
-    "self_mode": false,
+    "self_mode": true,
 	"autobio": false,
 	"antihidetag": true,
 	"user_register": false,
 	"anti_delete" : false,
-	"anticall": true,
+	"anticall": false,
 	"prefix": ".",
 	"language":"ind",
-	"ownerNumber": "62887435047326",
-	"ownerNumberr": "62887435047326",
-	"cr": "@ZeeoneOfc",
-	"ownername": "ZeeoneOfc",
-	"botname":"Ａʟᴘʜᴀʙᴏᴛ",
-	"thumb":"thumbnail_1.jpg",
+	"ownerNumber": "6285240389682",
+	"ownerNumberr": "6285240389682",
+	"cr": "@FATUR GANTENG",
+	"ownername": "FATUR GANTENG",
+	"botname":"FATUR GANTENG",
+	"thumb":"fatur.jpg",
 	"fakethumb":"thumbnail_1.jpg", 
-	"fake": " 「  Ａʟᴘʜᴀʙᴏᴛ  」\nCreated By @ZeeoneOfc"
+	"fake": " 「  FATUR GANTENG  」\nCreated By @FATUR GANTENG"
 }
