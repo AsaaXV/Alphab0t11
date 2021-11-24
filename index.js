@@ -2255,7 +2255,24 @@ const btn = {
     locationMessage: bacotlu.message.locationMessage
 }
 if(menusimple == false){
-sendMessage(from,  btn, MessageType.buttonsMessage,{
+let content1 = fs.readFileSync(`image/${thumbnail}`)
+const media1 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content1})
+let bacotlu1 = media1.message["ephemeralMessage"] ? media1.message.ephemeralMessage : media1
+
+const buttons = [
+  {buttonId: 'ownerku', buttonText: {displayText: '•❗「 OWNER 」'}, type: 1},
+  {buttonId: 'info', buttonText:{displayText: '•❗「 INFO 」'}, type: 1},
+  {buttonId: 'Command', buttonText: {displayText: '•❗「 LISTMENU 」'}, type: 1}
+]
+const btn = {
+    contentText: ini_anu,
+    footerText: `${tampilTanggal}${enter}${tampilWaktu}${enter}${enter}BY @${koko.split('@')[0]} | KANG BAKSO`,
+    buttons: buttons,
+    headerType: 6,
+    locationMessage: bacotlu.message.locationMessage
+}
+
+alpha.sendMessage(from,  btn, MessageType.buttonsMessage,{
         caption: 'Botwea ©2k21',
         "contextInfo": {
             text: 'hi',
