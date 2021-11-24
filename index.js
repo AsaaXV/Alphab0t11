@@ -177,7 +177,7 @@ let nopref = false
 let single = false
 let prefa = setting.prefix
 let menusimple = false
-let Mloc = true
+let mloc = true
 let autobio = setting.autobio
 let antihidetag = setting.antihidetag
 
