@@ -2212,41 +2212,60 @@ let papako = [{
 			let ch = await getBuffer(chatt)
 koko = `${targetpc}@s.whatsapp.net`
 let content = fs.readFileSync(`image/${thumbnail}`)
-const media = await alpha.prepareMessage(from, content, MessageType.location, {thumbnail: content})
+const media = await alpha.prepareMessage(from, content, MessageType.image, { thumbnail:fs.readFileSync(`image/${thumbnail}`)})
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
 ini_anu =`𝙃𝙚𝙡𝙡𝙤 𝙄'𝙢 𝙪𝙨𝙚𝙧𝙗𝙤𝙩 👋
 
-			『 *BOT INFO*  』
+*╭─❏ _•❗「 BOT BAMG 」_*
+*│• Creator :  @${koko.split('@')[0]}*
+*│• Powered  : @${ini_mark.split('@')[0]}*
+*│• Mode : ${status}*
+*│• Status : ${offline ? 'OFFLINE' : 'ONLINE'}*
+*│• Prefix : [  ${prefix}  ]*
+*│• Group Chat : ${giid.length}*
+*│• Private Chat : ${totalchat.length - giid.length}*
+*│• Total Chat : ${totalchat.length}*
+*│• Total hit : ${hitall}*
+*│• Hit today : ${hit_today.length}*
+*│• Speed : ${latensii.toFixed(4)} Second*
+*│• Runtime : ${kyun(anunya)}*
+*╰──────────────❏*
 
-*🔖 Creator :  @${koko.split('@')[0]}*
-*🔖 Powered  : @${ini_mark.split('@')[0]}*
-*🔖 Mode : ${status}*
-*🔖 Status : ${offline ? 'OFFLINE' : 'ONLINE'}*
-*🔖 Prefix : [  ${prefix}  ]*
-*🔖 Group Chat : ${giid.length}*
-*🔖 Private Chat : ${totalchat.length - giid.length}*
-*🔖 Total Chat : ${totalchat.length}*
-*🔖 Lib  : Baileys*
-*🔖 Type  : NodeJs*
-*🔖 Total hit : ${hitall}*
-*🔖 Hit today : ${hit_today.length}*
-*🔖 Speed : ${latensii.toFixed(4)} Second*
-*🔖 Runtime : ${kyun(anunya)}*
-*🔖 Battery : ${isBattre}*
-*🔖 Charging : ${isCharge}*
-
-			『 *YOUR INFO* 』
-
-*〽️ Name : ${pushname}*
-*〽️ Bio : ${p1 ? `${p1.status}` : '-'}*
-*〽️ Nomor : @${sender.split('@')[0]}*
-*〽️ Me : ${mek.key.fromMe ? 'True' : 'False'}*
-*〽️ Owner : ${isOwner ? 'True' : `False`}*
+*╭─❏ _•❗「 BOT BAMG 」_*
+*│➤️ Name : ${pushname}*
+*│➤️ Bio : ${p1 ? `${p1.status}` : '-'}*
+*│➤️ Nomor : @${sender.split('@')[0]}*
+*│➤️ Me : ${mek.key.fromMe ? 'True' : 'False'}*
+*│➤ Owner : ${isOwner ? 'True' : `False`}*
+*╰──────────────❏
 `
+const buttons = [
+  {buttonId: 'ownerku', buttonText: {displayText: '•❗「 OWNER 」'}, type: 1},
+  {buttonId: 'info', buttonText:{displayText: '•❗「 INFO 」'}, type: 1},
+  {buttonId: 'Command', buttonText: {displayText: '•❗「 LISTMENU 」'}, type: 1}
+]
+
+const btn = {
+    contentText: ini_anu,
+    footerText: `${tampilTanggal}${enter}${tampilWaktu}${enter}${enter}BY @${koko.split('@')[0]} | KANG BAKSO`,
+    buttons: buttons,
+    headerType: 6,
+    locationMessage: bacotlu.message.locationMessage
+}
 if(menusimple == false){
-sendButLocation(from, ini_anu, `𝐏𝐥𝐞𝐚𝐬𝐞 𝐝𝐨𝐧'𝐭 𝐬𝐩𝐚𝐦 𝐛𝐨𝐭, 𝐩𝐚𝐮𝐬𝐞 𝟓 𝐬𝐞𝐜𝐨𝐧𝐝𝐬 𝐩𝐞𝐫 𝐜𝐨𝐦𝐦𝐚𝐧𝐝.\n𝐓𝐡𝐚𝐧𝐤𝐬!`, sender, koko, ini_mark)
+sendMessage(from,  btn, MessageType.buttonsMessage,{
+        caption: 'Botwea ©2k21',
+        "contextInfo": {
+            text: 'hi',
+            "forwardingScore": 1000000000,
+            isForwarded: true,
+            sendEphemeral: true,
+            "mentionedJid" : [sender,koko,ini_mark],
+            },
+			quoted: fkontak,sendEphemeral: true 
+			})
 } else if(menusimple = true){ 
 let content1 = fs.readFileSync(`image/${thumbnail}`)
 const media1 = await alpha.prepareMessage(from, content1, MessageType.location, {thumbnail: content1})
