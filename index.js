@@ -177,7 +177,7 @@ let nopref = false
 let single = false
 let prefa = setting.prefix
 let menusimple = false
-let mloc = true
+let Mloc = false
 let autobio = setting.autobio
 let antihidetag = setting.antihidetag
 
@@ -2216,7 +2216,7 @@ const media = await alpha.prepareMessage(from, content, MessageType.image, { thu
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
-ini_anu =`𝙃𝙚𝙡𝙡𝙤 𝙄'𝙢 𝙪𝙨𝙚𝙧𝙗𝙤𝙩 👋
+ini_anu =`*•❗INI PUNYA FATUR*
 
 *╭─❏ _•❗「 BOT BAMG 」_*
 *│• Creator :  @${koko.split('@')[0]}*
@@ -2224,13 +2224,13 @@ ini_anu =`𝙃𝙚𝙡𝙡𝙤 𝙄'𝙢 𝙪𝙨𝙚𝙧𝙗𝙤𝙩 👋
 *│• Prefix : [  ${prefix}  ]*
 *│• Group Chat : ${giid.length}*
 *│• Private Chat : ${totalchat.length - giid.length}*
-*│• Total hit : ${hitall}*
 *│• Runtime : ${kyun(anunya)}*
 *╰──────❏*
 
 *╭─❏ _•❗「 INFO 」_*
-*│➤️ Name : ${pushname}*
 *│➤️ Nomor : @${sender.split('@')[0]}*
+*│➤ Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}
+*│➤ Role : ${role}
 *│➤ Owner : ${isOwner ? 'True' : `False`}*
 *╰──────❏*
 `
@@ -3026,7 +3026,7 @@ case 'bcgif':
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
 					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: INI FATUR BAMH;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
