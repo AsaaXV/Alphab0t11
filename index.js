@@ -2234,7 +2234,7 @@ ini_anu =`*╭─❏ _•❗「 BOT BAMG 」_*
 `
 const buttons = [
   {buttonId: 'Command', buttonText: {displayText: '•❗「 LISTMENU 」'}, type: 1},
-  {buttonId: 'ownerku', buttonText:{displayText: '•❗「 OWNER 」'}, type: 1},
+  {buttonId: 'owner', buttonText:{displayText: '•❗「 OWNER 」'}, type: 1},
   {buttonId: 'infobot', buttonText: {displayText: '•❗「 INFORMASI 」'}, type: 1}
 ]
 
@@ -2252,7 +2252,7 @@ let bacotlu = media3.message["ephemeralMessage"] ? media3.message.ephemeralMessa
 
 const buttons = [
   {buttonId: 'Command', buttonText: {displayText: '•❗「 LISTMENU 」'}, type: 1},
-  {buttonId: 'ownerku', buttonText:{displayText: '•❗「 OWNER 」'}, type: 1},
+  {buttonId: 'owner', buttonText:{displayText: '•❗「 OWNER 」'}, type: 1},
   {buttonId: 'infobot', buttonText: {displayText: '•❗「 INFORMASI 」'}, type: 1}
 ]
 const btn = {
@@ -3023,8 +3023,8 @@ case 'bcgif':
 					for (let i of ini_ownerNumber) {
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
-					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: INI FATUR BAMH;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"displayName": 'INI FATUR BANG',
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: INI FATUR BAMG;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
