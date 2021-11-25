@@ -2216,23 +2216,21 @@ const media = await alpha.prepareMessage(from, content, MessageType.image, { thu
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
-ini_anu =`*•❗INI PUNYA FATUR*
-
-*╭─❏ _•❗「 BOT BAMG 」_*
+ini_anu =`*╭─❏ _•❗「 BOT BAMG 」_*
 *│• Creator :  @${koko.split('@')[0]}*
 *│• Powered  : @${ini_mark.split('@')[0]}*
 *│• Prefix : [  ${prefix}  ]*
 *│• Group Chat : ${giid.length}*
 *│• Private Chat : ${totalchat.length - giid.length}*
 *│• Runtime : ${kyun(anunya)}*
-*╰──────❏*
+*╰────❏*
 
 *╭─❏ _•❗「 INFO 」_*
 *│➤️ Nomor : @${sender.split('@')[0]}*
-*│➤ Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}
-*│➤ Role : ${role}
+*│➤ Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}*
+*│➤ Role : ${role}*
 *│➤ Owner : ${isOwner ? 'True' : `False`}*
-*╰──────❏*
+*╰────❏*
 `
 const buttons = [
   {buttonId: 'Command', buttonText: {displayText: '•❗「 LISTMENU 」'}, type: 1},
